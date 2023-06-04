@@ -65,6 +65,21 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler  {
                             objektuSkripts.audioAvots.
                             PlayOneShot(objektuSkripts.skanasKoAtskanot[3]);
                             break;
+
+                        case "police":
+
+                            objektuSkripts.audioAvots.
+                            PlayOneShot(objektuSkripts.skanasKoAtskanot[4]);
+                            break;
+
+
+
+
+
+
+
+
+
                     }
                 }
                
@@ -91,6 +106,14 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler  {
                         GetComponent<RectTransform>().localPosition =
                         objektuSkripts.bussKoord;
                         break;
+
+
+                    case "police":
+                        objektuSkripts.DePolice.
+                        GetComponent<RectTransform>().localPosition =
+                        objektuSkripts.PoliceKoord;
+                        break;
+
                 }
             }
         }
