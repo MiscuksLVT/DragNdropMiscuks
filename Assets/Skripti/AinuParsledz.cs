@@ -5,15 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class AinuParsledz : MonoBehaviour {
 
-	// Use this for initialization
+	
 	void Start () {
 		
 	}
 
-    // Update is called once per frame
+    
     public void Spelet()
     {
-        SceneManager.LoadScene("PilsetasAina", LoadSceneMode.Additive);
+        SceneManager.LoadScene("PilsetasAina");
 
     }
 }

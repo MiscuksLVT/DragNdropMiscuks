@@ -2,30 +2,31 @@ Initialize engine version: 5.5.6f1 (3fb31a95adee)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
-    Vendor:   NVIDIA
-    VRAM:     3072 MB
-    Driver:   30.0.15.1123
+    Renderer: Intel(R) UHD Graphics 630 (ID=0x9bc8)
+    Vendor:   Intel
+    VRAM:     2111 MB
+    Driver:   30.0.101.1273
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\Unity\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\Unity\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\Unity\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\Unity\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\Unity\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\Unity\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: D:\Unity\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading D:\Unity\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: D:\Unity\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading D:\Unity\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.277 seconds
-Platform assembly: D:\Unity\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: D:\Unity\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\System.dll (this message is harmless)
-desktop: 2560x1440 165Hz; virtual: 4480x1533 at -1920,0
+Platform assembly: C:\Users\2PT-2\Unity_Miscuks\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\2PT-2\Unity_Miscuks\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\2PT-2\Unity_Miscuks\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\2PT-2\Unity_Miscuks\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\2PT-2\Unity_Miscuks\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\2PT-2\Unity_Miscuks\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\2PT-2\Unity_Miscuks\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\2PT-2\Unity_Miscuks\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\2PT-2\Unity_Miscuks\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\2PT-2\Unity_Miscuks\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.016 seconds
+Platform assembly: C:\Users\2PT-2\Unity_Miscuks\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\2PT-2\Unity_Miscuks\DragAndDrop\DragNdropMiscuks\BABABOI_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.538400 ms
+UnloadTime: 1.735800 ms
 Setting up 3 worker threads for Enlighten.
-  Thread -> id: 5a9c -> priority: 1 
-  Thread -> id: 1a40 -> priority: 1 
-  Thread -> id: 48c -> priority: 1 
+  Thread -> id: 3004 -> priority: 1 
+  Thread -> id: b20 -> priority: 1 
+  Thread -> id: b18 -> priority: 1 

@@ -12,27 +12,27 @@ public class ObjektuTransformacija : MonoBehaviour {
 			{
 				objektuSkripts.pedejaisVilktais.
 				GetComponent<RectTransform>().
-				transform.Rotate(0, 0, Time.deltaTime * 10f);
+				transform.Rotate(0, 0, Time.deltaTime * 20f);
 			}
 
             if (Input.GetKey(KeyCode.X))
             {
                 objektuSkripts.pedejaisVilktais.
                 GetComponent<RectTransform>().
-                transform.Rotate(0, 0, -Time.deltaTime * 10f);
+                transform.Rotate(0, 0, -Time.deltaTime * 20f);
             }
 
 			if(Input.GetKey(KeyCode.UpArrow)){
 				if(objektuSkripts.pedejaisVilktais.
 					GetComponent<RectTransform>().
-					localScale.y <= 0.85f){
+					localScale.y <= 1.5f){
 					objektuSkripts.pedejaisVilktais.
 					GetComponent<RectTransform>().transform.localScale =
 					new Vector2(objektuSkripts.pedejaisVilktais.
 					GetComponent<RectTransform>().transform.localScale.x,
                     objektuSkripts.pedejaisVilktais.
                     GetComponent<RectTransform>().
-					transform.localScale.y + 0.001f);
+					transform.localScale.y + 0.01f);
 				}
 			}
 
@@ -40,14 +40,14 @@ public class ObjektuTransformacija : MonoBehaviour {
             if (Input.GetKey(KeyCode.DownArrow)){
                 if (objektuSkripts.pedejaisVilktais.
                     GetComponent<RectTransform>().
-                    localScale.y >= 0.3f){
+                    localScale.y >= 0.2f){
                     objektuSkripts.pedejaisVilktais.
                     GetComponent<RectTransform>().transform.localScale =
                     new Vector2(objektuSkripts.pedejaisVilktais.
                     GetComponent<RectTransform>().transform.localScale.x,
                     objektuSkripts.pedejaisVilktais.
                     GetComponent<RectTransform>().
-                    transform.localScale.y - 0.001f);
+                    transform.localScale.y - 0.01f);
                 }
             }
 
@@ -56,12 +56,12 @@ public class ObjektuTransformacija : MonoBehaviour {
             {
                 if (objektuSkripts.pedejaisVilktais.
                     GetComponent<RectTransform>().
-                    localScale.x >= 0.3f)
+                    localScale.x >= 0.2f)
                 {
                     objektuSkripts.pedejaisVilktais.
                     GetComponent<RectTransform>().transform.localScale =
                     new Vector2(objektuSkripts.pedejaisVilktais.
-                    GetComponent<RectTransform>().transform.localScale.x - 0.001f,
+                    GetComponent<RectTransform>().transform.localScale.x - 0.01f,
                     objektuSkripts.pedejaisVilktais.
                     GetComponent<RectTransform>().transform.localScale.y);
                 }
@@ -72,12 +72,12 @@ public class ObjektuTransformacija : MonoBehaviour {
             {
                 if (objektuSkripts.pedejaisVilktais.
                     GetComponent<RectTransform>().
-                    localScale.x <= 0.85f)
+                    localScale.x <= 1.5f)
                 {
                     objektuSkripts.pedejaisVilktais.
                     GetComponent<RectTransform>().transform.localScale =
                     new Vector2(objektuSkripts.pedejaisVilktais.
-                    GetComponent<RectTransform>().transform.localScale.x + 0.001f,
+                    GetComponent<RectTransform>().transform.localScale.x + 0.01f,
                     objektuSkripts.pedejaisVilktais.
                     GetComponent<RectTransform>().transform.localScale.y);
                 }
