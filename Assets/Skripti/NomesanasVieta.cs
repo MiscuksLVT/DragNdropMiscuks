@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class NomesanasVieta : MonoBehaviour, IDropHandler  {
 	private float vietasZRot, velkObjZRot, rotacijasStarpiba;
@@ -9,11 +10,17 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler  {
 	private float xIzmeruStarp, yIzmeruStarp;
 	public Objekti objektuSkripts;
    public static int ievetoti = 0;
-    public GameObject UzvarScreen;
+   
+  
+    public Timer TimerSkripts;  
+
+
+
     public void OnDrop(PointerEventData eventData)
     {
         if(eventData.pointerDrag != null) {
-            if (eventData.pointerDrag.tag.Equals(tag)) {
+            if (eventData.pointerDrag.tag.Equals(tag))
+            {
                 vietasZRot =
                 GetComponent<RectTransform>().transform.eulerAngles.z;
 
@@ -25,32 +32,33 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler  {
 
                 velkObjIzm = eventData.pointerDrag.
                     GetComponent<RectTransform>().localScale;
-               
+
                 vietasIzm = GetComponent<RectTransform>().localScale;
 
                 xIzmeruStarp = Mathf.Abs(velkObjIzm.x - vietasIzm.x);
                 yIzmeruStarp = Mathf.Abs(velkObjIzm.y - vietasIzm.y);
 
-                if ((rotacijasStarpiba <= 6 || 
-                    (rotacijasStarpiba >= 354 && rotacijasStarpiba<=360))
-                    && (xIzmeruStarp<= 0.1 && yIzmeruStarp <=0.1)) {
-                    
+                if ((rotacijasStarpiba <= 6 ||
+                    (rotacijasStarpiba >= 354 && rotacijasStarpiba <= 360))
+                    && (xIzmeruStarp <= 0.1 && yIzmeruStarp <= 0.1))
+                {
+
                     objektuSkripts.vaiIstajaVieta = true;
-                    
+
                     eventData.pointerDrag.GetComponent<RectTransform>()
                         .anchoredPosition =
                         GetComponent<RectTransform>().anchoredPosition;
 
                     eventData.pointerDrag.GetComponent<RectTransform>()
-                        .localRotation = 
+                        .localRotation =
                         GetComponent<RectTransform>().localRotation;
 
                     eventData.pointerDrag.GetComponent<RectTransform>()
-                        .localScale = 
+                        .localScale =
                         GetComponent<RectTransform>().localScale;
 
 
-                    switch(eventData.pointerDrag.tag)
+                    switch (eventData.pointerDrag.tag)
                     {
                         case "atkritumi":
                             objektuSkripts.audioAvots.
@@ -98,7 +106,7 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler  {
                             break;
 
 
-                        case "ekskavatirs":
+                        case "eksko":
                             objektuSkripts.audioAvots.
                        PlayOneShot(objektuSkripts.skanasKoAtskanot[9]); ievetoti++;
                             break;
@@ -127,14 +135,19 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler  {
 
                     }
 
-                    Debug.Log("PAPA "+ ievetoti);
+                    Debug.Log("PAPA " + ievetoti);
 
                     if (ievetoti == 12)
                     {
+                        ievetoti = 0;
+                        TimerSkripts.Izvade();
 
 
+
+                        Debug.Log("PsaaaaaaaaaaaaAPA " + ievetoti);
                     }
                 }
+            }
                
             } else {
                 objektuSkripts.vaiIstajaVieta = false;
@@ -224,5 +237,11 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler  {
                 }
             }
         }
+    
+
     }
-}
+
+
+    
+
+    

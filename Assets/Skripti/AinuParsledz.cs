@@ -10,7 +10,22 @@ public class AinuParsledz : MonoBehaviour {
 		
 	}
 
-    
+    public void ReloadGame()
+    {
+
+        SceneManager.LoadScene("PilsetasAina");
+    }
+
+    public void Sakums()
+    {
+
+        SceneManager.LoadScene("Sakums");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
     public void Spelet()
     {
         SceneManager.LoadScene("PilsetasAina");

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class ObjektuTransformacija : MonoBehaviour {
 	public Objekti objektuSkripts;
+ 
 
-	void Update () {
+    void Update () {
 		if(objektuSkripts.pedejaisVilktais != null)
 		{
 			if (Input.GetKey(KeyCode.Z))
